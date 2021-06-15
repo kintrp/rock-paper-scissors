@@ -101,7 +101,7 @@ function gameOver () {
 }
 
 
-
+/*
 
 function reStart(){
     if (showScoreComputer && showScorePlayer === 3) {
@@ -111,6 +111,10 @@ function reStart(){
 
     }
 }
+
+*/
+
+
 
 
 
