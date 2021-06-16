@@ -7,26 +7,28 @@ let computerChoice;
 let showScorePlayer = 0;
 let showScoreComputer = 0;
 
+
+
 document.getElementById("rock").addEventListener("click", function(event){
-userChoice = event.currentTarget.innerText; 
-computerChoice = getComputerChoice();
-document.getElementById('user-choice').innerText = userChoice;
-document.getElementById('computer-choice').innerHTML = computerChoice;
-document.getElementById('result').innerText = result();
+    userChoice = event.currentTarget.getAttribute('alt');
+    computerChoice = getComputerChoice();
+    document.getElementById('user-choice').innerText = userChoice;
+    document.getElementById('computer-choice').innerHTML = computerChoice;
+    document.getElementById('result').innerText = result();
 })
 document.getElementById("paper").addEventListener("click", function(event){
-userChoice = event.currentTarget.innerText; 
-computerChoice = getComputerChoice();
-document.getElementById('user-choice').innerText = userChoice;
-document.getElementById('computer-choice').innerHTML = computerChoice;
-document.getElementById('result').innerText = result();
+    userChoice = event.currentTarget.getAttribute('alt'); 
+    computerChoice = getComputerChoice();
+    document.getElementById('user-choice').innerText = userChoice;
+    document.getElementById('computer-choice').innerHTML = computerChoice;
+    document.getElementById('result').innerText = result();
 })
 document.getElementById("scissors").addEventListener("click", function(event){
-userChoice = event.currentTarget.innerText; 
-computerChoice = getComputerChoice();
-document.getElementById('user-choice').innerText = userChoice;
-document.getElementById('computer-choice').innerHTML = computerChoice;
-document.getElementById('result').innerText = result();
+    userChoice = event.currentTarget.getAttribute('alt'); 
+    computerChoice = getComputerChoice();
+    document.getElementById('user-choice').innerText = userChoice;
+    document.getElementById('computer-choice').innerHTML = computerChoice;
+    document.getElementById('result').innerText = result();
 })
 
 /*
@@ -42,7 +44,7 @@ function getComputerChoice(){
     } else{
       return 'scissors';
     }
-    }
+}
 
 /*
 gamelogic
@@ -83,63 +85,61 @@ function result (){
     return result;
 }
 
+/*
+gameOver
+*/
+
 function gameOver () {
     if (showScorePlayer === 3) {
         //alert ('Game over. - You win')
         let msgWinner = document.querySelector('#messageWinner');
-        msgWinner.classList.toggle('reveal');
-        showScorePlayer = 0;
-        showScoreComputer = 0;  
+        msgWinner.classList.remove('hide'); 
+        msgWinner.classList.add('reveal');
     }
      if (showScoreComputer === 3) {
         //alert ('Game over. - Computer wins')
         let msgLooser = document.querySelector('#messageLooser');
-        msgLooser.classList.toggle('reveal'); 
-        showScoreComputer = 0;
-        showScorePlayer = 0; 
+        msgLooser.classList.remove('hide'); 
+        msgLooser.classList.add('reveal'); 
     }
 }
-
 
 /*
-
-function reStart(){
-    if (showScoreComputer && showScorePlayer === 3) {
-        var element = document.getElementById("messageWinner");
-        element.classList.add("hide");
-    
-
-    }
-}
-
+reStart
 */
 
+document.getElementById("restartGame").addEventListener("click", reStart);
 
+function reStart(){
 
+    if (showScorePlayer >= 3) {
+        let msgWinner = document.querySelector('#messageWinner');
+        msgWinner.classList.remove('reveal');
+        msgWinner.classList.add('hide'); 
+    } 
 
-
-
-
+    else if (showScoreComputer >= 3) {
+        let msgLooser = document.querySelector('#messageLooser');
+        msgLooser.classList.remove('reveal');
+        msgLooser.classList.add('hide');
+        /*
+        document.getElementById('player').innerText = 0;
+        document.getElementById('computer').innerText = 0;
         
+        document.getElementById('user-choice').innerText = '...';
+        document.getElementById('computer-choice').innerHTML = '...';
+        document.getElementById('result').innerHTML = '...';  
+        */
 
+    }
 
+    document.getElementById('player').innerText = 0;
+    document.getElementById('computer').innerText = 0;
+    showScorePlayer = 0;
+    document.getElementById('user-choice').innerText = '...';
+    document.getElementById('computer-choice').innerHTML = '...'; 
+    document.getElementById('result').innerHTML = '...'; 
+    showScoreComputer = 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    console.log(showScoreComputer, showScorePlayer);
+}

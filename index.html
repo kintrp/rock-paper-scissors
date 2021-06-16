@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheere-Stein-Papier</title>
-    <script src="https://kit.fontawesome.com/47eba03b6f.js" crossorigin="anonymous"></script>
+    <title>rock paper scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,35 +18,57 @@
           <h3>Make your choice</h3>
       </header>
 
-    <div class ="wrapper1"> 
+<div class = "center">
 
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
+    <div class ="wrapper1"> 
+ 
+        <img id="rock" src="https://images.unsplash.com/photo-1549645402-a9d655c5c344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="rock">
+        <img id="paper" src="https://images.unsplash.com/photo-1580753402232-8635eb91a327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="paper">
+        <img id="scissors" src="https://images.unsplash.com/photo-1586685983389-612a65517b38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="scissors">
+
+        <!-- Here starts the sidebar 
+        <button id="">rock</button>
+        <button id="">paper</button>
+        <button id="">scissors</button>
+        -->
 
     </div>
 
     <div class ="wrapper2">
         
-        <h3>Computer:<br> <span id="computer-choice"></span></h3>
-        <h3>Result:<br> <span id="result"></span></h3>
-        <h3>You:<br> <span id="user-choice"></span></h3>
+        <!-- Here starts the sidebar 
+        <h3>You chose <span id="user-choice"></span></h3>
+        <h3>Computer played <span id="computer-choice"></span></h3>
+        <h3>Result: <span id="result"></span></h3>
+        -->
+
+        <p>You chose <span id="user-choice"></span></p>
+        <p>Computer played <span id="computer-choice"></span></p>
 
     </div>
+
+    <p><span id="result"></span></p>
+
 
     <div class = "wrapper3">
-     
-    </div>
 
         <div id="messageWinner" class="hide">
-            You've won. Congratulations! 
+            You win. Game is over.
         </div>
+
         <div id="messageLooser" class="hide">
-            You lost.
+            Game is over. You're out. 
+        </div>
 
     </div> 
 
-    <img id="scissors" src="https://images.unsplash.com/photo-1586685983389-612a65517b38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="scissors" width="200" height="400">
+</div>
+
+<div class = "restartGame">
+
+    <button id="restartGame">restart game</button>
+
+</div>
 
 
     <!--  
@@ -56,11 +77,6 @@
         <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
         <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
 
-        
-        <img id="paper" src="https://images.unsplash.com/photo-1580753402232-8635eb91a327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" alt="paper" width="200" height="400">
-        <img id="scissors" src="https://images.unsplash.com/photo-1586685983389-612a65517b38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="scissors" width="200" height="400">
-        <img id="rock" src="https://images.unsplash.com/photo-1549645402-a9d655c5c344?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="rock" width="200" height="400">
-    
     -->
 
     
