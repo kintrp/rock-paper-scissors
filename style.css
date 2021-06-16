@@ -81,6 +81,8 @@ body{
     font-size: big;
     font-weight: bold;
     text-transform: uppercase;
+    background-color: rgb(50, 96, 223);
+    color: white;
 }
 
 #messageWinner{
