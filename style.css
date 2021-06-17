@@ -1,3 +1,10 @@
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .center {
+      width: 100%;
+    }
+  }
+
 h1{
     text-align: center;
     margin-top: 40px;
@@ -125,8 +132,15 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 750px;
+    margin:auto;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
 
 .hide{
     visibility: hidden;
@@ -135,3 +149,4 @@ body{
 .reveal{
     visibility: visible;
 }
+
