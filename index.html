@@ -21,59 +21,54 @@
           <h3>Make your choice</h3>
       </header>
 
-<div class = "center">
-    <div class ="wrapper1"> 
+    <div class = "center">
         
-        <!--
-        <img id="!rock" src="https://png.pngtree.com/png-clipart/20200709/original/pngtree-rock-png-image_489662.jpg" alt="rock">
-        <img id="!paper" src="https://media.istockphoto.com/photos/crumpled-newspaper-picture-id1184313366" alt="paper">
-        <img id="!scissors" src="https://media.istockphoto.com/photos/scissors-isolated-on-white-background-picture-id1045103196" alt="scissors">
- 
-        <button id="">rock</button>
-        <button id="">paper</button>
-        <button id="">scissors</button>
-        -->
-       
-        <i id="rock" alt="rock" class="fa fa-hand-rock-o fa-10x" aria-hidden="true"></i>
-        <i id="paper" alt="paper" class="fa fa-hand-paper-o fa-10x" aria-hidden="true"></i>
-        <i id="scissors" alt="scissors" class="fa fa-hand-scissors-o fa-10x" aria-hidden="true"></i>
+        <div class ="wrapper1"> 
+            
+            <!--
+            <img id="!rock" src="https://png.pngtree.com/png-clipart/20200709/original/pngtree-rock-png-image_489662.jpg" alt="rock">
+            <img id="!paper" src="https://media.istockphoto.com/photos/crumpled-newspaper-picture-id1184313366" alt="paper">
+            <img id="!scissors" src="https://media.istockphoto.com/photos/scissors-isolated-on-white-background-picture-id1045103196" alt="scissors">
+    
+            <button id="">rock</button>
+            <button id="">paper</button>
+            <button id="">scissors</button>
+            -->
+        
+            <i id="rock" alt="rock" class="fa fa-hand-rock-o fa-10x" aria-hidden="true"></i>
+            <i id="paper" alt="paper" class="fa fa-hand-paper-o fa-10x" aria-hidden="true"></i>
+            <i id="scissors" alt="scissors" class="fa fa-hand-scissors-o fa-10x" aria-hidden="true"></i>
+
+        </div>
+
+        <div class ="wrapper2">
+
+            <p>You chose <span id="user-choice"></span></p>
+            <p>Computer played <span id="computer-choice"></span></p>
+
+        </div>
+
+            <p><span id="result"></span></p>
+
+        <div class = "wrapper3">
+
+            <div id="messageWinner" class="hide">
+                You win. Game is over.
+            </div>
+
+            <div id="messageLooser" class="hide">
+                Game is over. You're out. 
+            </div>
+
+        </div> 
 
     </div>
 
-    <div class ="wrapper2">
-        
-        <!-- 
-        <h3>You chose <span id="user-choice"></span></h3>
-        <h3>Computer played <span id="computer-choice"></span></h3>
-        <h3>Result: <span id="result"></span></h3>
-        -->
-
-        <p>You chose <span id="user-choice"></span></p>
-        <p>Computer played <span id="computer-choice"></span></p>
-
-    </div>
-
-    <p><span id="result"></span></p>
-
-    <div class = "wrapper3">
-
-        <div id="messageWinner" class="hide">
-            You win. Game is over.
-        </div>
-
-        <div id="messageLooser" class="hide">
-            Game is over. You're out. 
-        </div>
-
-    </div> 
-
-</div>
-
-<div class = "restartGame">
+<footer>
 
     <button id="restartGame">restart game</button>
 
-</div>
+</footer>
 
     <script src="app.js"></script>
 </body>

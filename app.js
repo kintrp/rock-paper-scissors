@@ -122,15 +122,6 @@ function reStart(){
         let msgLooser = document.querySelector('#messageLooser');
         msgLooser.classList.remove('reveal');
         msgLooser.classList.add('hide');
-        /*
-        document.getElementById('player').innerText = 0;
-        document.getElementById('computer').innerText = 0;
-        
-        document.getElementById('user-choice').innerText = '...';
-        document.getElementById('computer-choice').innerHTML = '...';
-        document.getElementById('result').innerHTML = '...';  
-        */
-
     }
 
     document.getElementById('player').innerText = 0;
@@ -138,7 +129,7 @@ function reStart(){
     showScorePlayer = 0;
     document.getElementById('user-choice').innerText = '...';
     document.getElementById('computer-choice').innerHTML = '...'; 
-    document.getElementById('result').innerHTML = '...'; 
+    document.getElementById('result').innerHTML = ''; 
     showScoreComputer = 0;
 
     console.log(showScoreComputer, showScorePlayer);
