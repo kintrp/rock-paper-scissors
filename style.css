@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
 h1{
     text-align: center;
     margin-top: 40px;
@@ -63,7 +66,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(50, 96, 223);
+    background-color: black;
     color: white;
     width: 700px;
     margin: 0 auto;
@@ -83,7 +86,7 @@ body{
     font-size: big;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: rgb(50, 96, 223);
+    background-color: black;
     color: white;
 }
 
